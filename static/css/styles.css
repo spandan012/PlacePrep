@@ -1,0 +1,319 @@
+
+:root {
+  --microsoft-gradient: linear-gradient(135deg, #744700 0%, #4B0082 100%);
+  --google-gradient: linear-gradient(135deg, #0F9D58 0%, #1a73e8 100%);
+  --amazon-gradient: linear-gradient(135deg, #9B59B6 0%, #2980B9 100%);
+  --apple-gradient: linear-gradient(135deg, #A2AAAD 0%, #000000 100%);
+  --meta-gradient:  linear-gradient(135deg, #4267B2 0%, #00AEEF 100%); 
+  --netflix-gradient: linear-gradient(135deg, #E50914 0%, #B81D24 100%);
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+}
+
+nav a.active {
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.tier-section {
+  margin-bottom: 4rem;
+}
+
+.tier-header {
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.tier-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.tier-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.company-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+}
+
+.microsoft { background: var(--microsoft-gradient); }
+.google { background: var(--google-gradient); }
+.amazon { background: var(--amazon-gradient); }
+.uber { background: linear-gradient(135deg, #276EF1 0%, #1A1A1A 100%); }
+.adobe { background: linear-gradient(135deg, #FF0000 0%, #8B0000 100%); }
+.salesforce { background: linear-gradient(135deg, #00A1E0 0%, #1589EE 100%); }
+.wipro { background: linear-gradient(135deg, #341F97 0%, #1F1F1F 100%); }
+.apple { background: var(--apple-gradient); }
+.meta { background: var(--meta-gradient) }
+.netflix { background: var(--netflix-gradient); }
+.spotify { background: linear-gradient(135deg, #1DB954 0%, #191414 100%); }
+.airbnb { background: linear-gradient(135deg, #FF5A5F 0%, #FFB400 100%); }
+.x { background: linear-gradient(135deg, #000000 0%, #1A1A1A 100%); }
+.tcs { background: linear-gradient(135deg, #0078C0 0%, #005A8C 100%); }
+.cognizant { background: linear-gradient(135deg, #1A9F60 0%, #004D40 100%); }
+.capgemini { background: linear-gradient(135deg, #005AA7 0%, #FFFDE4 100%); }
+.tcs { background: linear-gradient(135deg, #FF6F00 0%, #FF8F00 100%); }
+.infosys { background: linear-gradient(135deg, #0052CC 0%, #0073E6 100%); }
+.mindtree { background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%); }
+.capgemini { background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%); }
+
+
+
+
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.company-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.company-card h3 {
+  margin: 0.5rem 0;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.company-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.company-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.view-guide-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.view-guide-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Company Detail Page Styles */
+.company-detail-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.sidebar {
+  width: 280px;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #666;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+.process-step {
+  margin-bottom: 2rem;
+}
+
+.problem-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.problem-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.difficulty {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.easy { background: #e1f5e1; color: #0F9D58; }
+
+.difficulty{
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+.medium{
+  background: #e8d0c4; color: #e26d07;
+}
+
+.difficulty{
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+.hard{
+  background: #f4a0a0; color: #8B0000;
+}
+
+
+.time {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag {
+  background: #f5f5f5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.solve-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .company-detail-container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: auto;
+      position: static;
+  }
+} 

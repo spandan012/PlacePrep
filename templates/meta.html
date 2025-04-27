@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Interview Guide - PlacePrep</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PlacePrep</div>
+            <ul>
+                <li><a href="index.html">Companies</a></li>
+                <li><a href="#interview-process">Interview Process</a></li>
+                <li><a href="#coding-problems">Coding Questions</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="company-detail-container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Meta Recruitment Process</h3>
+                <ul>
+                    <li><a href="#interview-process">Interview Process</a></li>
+                    <li><a href="#interview-rounds">Interview Rounds</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Meta Interview Preparation</h3>
+                <ul>
+                    <li><a href="#preparation">Preparation Tips</a></li>
+                    <li><a href="#common-questions">Common Questions</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Coding Questions</h3>
+                <ul>
+                    <li><a href="#easy">Easy Problems (0/7)</a></li>
+                    <li><a href="#intermediate">Medium Problems (0/7)</a></li>
+                    <li><a href="#advanced">Hard Problems (0/7)</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="about" class="content-section">
+                <h1>About Meta</h1>
+                <p>Meta Platforms, Inc., headquartered in Menlo Park, California, is a global technology company focused on social media, connectivity, and virtual reality. Formerly known as Facebook, Meta is renowned for products like Facebook, Instagram, WhatsApp, and Oculus, and is one of the Big Five tech companies, emphasizing innovation in social networking and the metaverse.</p>
+            </section>
+
+            <section id="interview-process" class="content-section">
+                <h2>Meta Recruitment Process</h2>
+                <div class="process-step">
+                    <h3>1. Application and Screening</h3>
+                    <ul>
+                        <li>Apply through the <b>Meta Careers portal</b>, campus recruitment, or platforms like LinkedIn.</li>
+                        <li>Tailor your <b>resume</b> to highlight technical projects, scalability experience, and relevant skills.</li>
+                        <li><b>Referrals</b> from Meta employees can significantly enhance your application.</li>
+                    </ul>    
+                </div>
+                <div class="process-step">
+                    <h3>2. Interview Rounds</h3>
+                    <p>Meta’s hiring process is rigorous, focusing on technical skills, problem-solving, and alignment with its mission to connect people.</p>
+                    <h4>Phone Screen</h4>
+                    <ul>
+                        <li>Initial 30-45 minute call with an engineer.</li>
+                        <li>Includes 1-2 <b>coding problems</b> (algorithms, data structures) and brief <b>behavioral questions</b>.</li>
+                    </ul>
+                    
+                    <h4>Online Assessment (Optional)</h4>
+                    <ul>
+                        <li>Hosted on platforms like <b>HackerRank</b> or <b>CoderPad</b>.</li>
+                        <li>Typically includes 2-3 <b>coding problems</b> focusing on algorithms, data structures, and optimization.</li>
+                        <li>Emphasis on <b>clean code</b> and <b>edge cases</b>.</li>
+                    </ul>
+
+                    <h4>Technical Interviews (3-5 rounds)</h4>
+                    <ul>
+                        <li>Each round lasts <b>45-60 minutes</b>, conducted virtually or onsite.</li>
+                        <li>Topics: <b>Data Structures (Arrays, Trees, Graphs), Algorithms, System Design, Object-Oriented Programming, Meta-specific technologies (e.g., React, GraphQL)</b>.</li>
+                        <li>Expect <b>whiteboard coding</b>, <b>system design</b> (e.g., scalable social platforms), and <b>behavioral questions</b> tied to Meta’s values like impact and collaboration.</li>
+                    </ul>
+
+                    <h4>Final Interview</h4>
+                    <ul>
+                        <li>Conducted by a senior engineer or manager to assess <b>technical depth</b> and <b>cultural fit</b>.</li>
+                        <li>May include <b>cross-functional questions</b> to evaluate adaptability.</li>
+                    </ul>
+
+                    <h4>Hiring Decision</h4>
+                    <ul>
+                        <li>Feedback from all rounds is reviewed by a hiring committee.</li>
+                        <li>Final discussions cover <b>role</b>, <b>team fit</b>, and <b>compensation</b>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="preparation" class="content-section">
+                <h2>Meta Interview Preparation</h2>
+                <h3>Preparation Tips</h3>
+                <ul>
+                    <li>Practice <b>LeetCode Medium and Hard</b> problems, focusing on graphs, dynamic programming, and string manipulation.</li>
+                    <li>Study <b>system design</b> (e.g., designing social media platforms, APIs) and <b>Meta-specific technologies</b> (e.g., React, GraphQL).</li>
+                    <li>Prepare <b>behavioral responses</b> using the STAR method, emphasizing impact, collaboration, and adaptability.</li>
+                    <li>Use platforms like <b>Interviewing.io</b> or <b>LeetCode Premium</b> for mock interviews.</li>
+                    <li>Practice explaining <b>algorithm optimization</b> and handling edge cases clearly.</li>
+                </ul>
+            </section>
+
+            <section id="common-questions" class="content-section">
+                <h2>Common Interview Questions</h2>
+                
+                <h3>Technical Questions:</h3>
+                <ul>
+                    <li>Design a <b>news feed system</b> for a social media platform.</li>
+                    <li>Implement a <b>graph traversal algorithm</b> to find mutual friends.</li>
+                    <li>Find the <b>shortest path</b> in a weighted graph.</li>
+                    <li>Optimize a <b>string compression algorithm</b>.</li>
+                    <li>Explain <b>sharding</b> in distributed databases.</li>
+                </ul>
+
+                <h3>Behavioral Questions:</h3>
+                <ul>
+                    <li>Tell me about a time you <b>made a significant impact</b> on a project.</li>
+                    <li>Describe a situation where you <b>collaborated</b> with a challenging teammate.</li>
+                    <li>How did you handle a project with <b>ambiguous requirements</b>?</li>
+                    <li>Why do you want to work at <b>Meta</b>?</li>
+                </ul>
+            </section>
+
+            <section id="coding-problems" class="content-section">
+                <h2>Coding Problems</h2>
+
+                <!-- Easy Problems -->
+                <div class="problem-section">
+                    <section id="easy" class="content-section"></section>
+                    <h3>Easy Problems</h3>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">15.0 Mins</span>
+                        </div>
+                        <h4>Two Sum</h4>
+                        <div class="tags">
+                            <span class="tag">Array</span>
+                            <span class="tag">HashMap</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/two-sum/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">16.0 Mins</span>
+                        </div>
+                        <h4>Valid Parentheses</h4>
+                        <div class="tags">
+                            <span class="tag">Stack</span>
+                            <span class="tag">String</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/valid-parentheses/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">17.0 Mins</span>
+                        </div>
+                        <h4>Merge Two Sorted Lists</h4>
+                        <div class="tags">
+                            <span class="tag">Linked List</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/merge-two-sorted-lists/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">18.0 Mins</span>
+                        </div>
+                        <h4>Reverse Linked List</h4>
+                        <div class="tags">
+                            <span class="tag">Linked List</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/reverse-linked-list/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">19.0 Mins</span>
+                        </div>
+                        <h4>Maximum Subarray</h4>
+                        <div class="tags">
+                            <span class="tag">Array</span>
+                            <span class="tag">Dynamic Programming</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/maximum-subarray/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">20.0 Mins</span>
+                        </div>
+                        <h4>Climbing Stairs</h4>
+                        <div class="tags">
+                            <span class="tag">Dynamic Programming</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/climbing-stairs/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty easy">Easy</span>
+                            <span class="time">21.0 Mins</span>
+                        </div>
+                        <h4>Contains Duplicate</h4>
+                        <div class="tags">
+                            <span class="tag">Array</span>
+                            <span class="tag">HashSet</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/contains-duplicate/', '_blank')">Solve</button>
+                    </div>
+                </div>
+
+                <!-- Medium Problems -->
+                <div class="problem-section">
+                    <section id="intermediate" class="content-section"></section>
+                    <h3>Medium Problems</h3>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">30.0 Mins</span>
+                        </div>
+                        <h4>Longest Substring Without Repeating Characters</h4>
+                        <div class="tags">
+                            <span class="tag">HashMap</span>
+                            <span class="tag">Sliding Window</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/longest-substring-without-repeating-characters/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">31.0 Mins</span>
+                        </div>
+                        <h4>Group Anagrams</h4>
+                        <div class="tags">
+                            <span class="tag">HashMap</span>
+                            <span class="tag">String</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/group-anagrams/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">32.0 Mins</span>
+                        </div>
+                        <h4>Add Two Numbers</h4>
+                        <div class="tags">
+                            <span class="tag">Linked List</span>
+                            <span class="tag">Math</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/add-two-numbers/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">33.0 Mins</span>
+                        </div>
+                        <h4>Container With Most Water</h4>
+                        <div class="tags">
+                            <span class="tag">Array</span>
+                            <span class="tag">Two Pointers</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/container-with-most-water/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">34.0 Mins</span>
+                        </div>
+                        <h4>Top K Frequent Elements</h4>
+                        <div class="tags">
+                            <span class="tag">Heap</span>
+                            <span class="tag">HashMap</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/top-k-frequent-elements/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">35.0 Mins</span>
+                        </div>
+                        <h4>Binary Tree Level Order Traversal</h4>
+                        <div class="tags">
+                            <span class="tag">Tree</span>
+                            <span class="tag">BFS</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/binary-tree-level-order-traversal/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty medium">Medium</span>
+                            <span class="time">36.0 Mins</span>
+                        </div>
+                        <h4>Validate Binary Search Tree</h4>
+                        <div class="tags">
+                            <span class="tag">Tree</span>
+                            <span class="tag">DFS</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/validate-binary-search-tree/', '_blank')">Solve</button>
+                    </div>
+                </div>
+
+                <!-- Hard Problems -->
+                <div class="problem-section">
+                    <section id="advanced" class="content-section"></section>
+                    <h3>Hard Problems</h3>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">50.0 Mins</span>
+                        </div>
+                        <h4>Median of Two Sorted Arrays</h4>
+                        <div class="tags">
+                            <span class="tag">Array</span>
+                            <span class="tag">Binary Search</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/median-of-two-sorted-arrays/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">52.0 Mins</span>
+                        </div>
+                        <h4>Merge k Sorted Lists</h4>
+                        <div class="tags">
+                            <span class="tag">Heap</span>
+                            <span class="tag">Linked List</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/merge-k-sorted-lists/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">55.0 Mins</span>
+                        </div>
+                        <h4>Word Ladder</h4>
+                        <div class="tags">
+                            <span class="tag">BFS</span>
+                            <span class="tag">Graph</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/word-ladder/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">53.0 Mins</span>
+                        </div>
+                        <h4>Trapping Rain Water</h4>
+                        <div class="tags">
+                            <span class="tag">Array</span>
+                            <span class="tag">Two Pointers</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/trapping-rain-water/', '_#pragma once
+blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">57.0 Mins</span>
+                        </div>
+                        <h4>Regular Expression Matching</h4>
+                        <div class="tags">
+                            <span class="tag">Dynamic Programming</span>
+                            <span class="tag">String</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/regular-expression-matching/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">58.0 Mins</span>
+                        </div>
+                        <h4>Serialize and Deserialize Binary Tree</h4>
+                        <div class="tags">
+                            <span class="tag">Tree</span>
+                            <span class="tag">DFS</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/serialize-and-deserialize-binary-tree/', '_blank')">Solve</button>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-info">
+                            <span class="difficulty hard">Hard</span>
+                            <span class="time">60.0 Mins</span>
+                        </div>
+                        <h4>Minimum Window Substring</h4>
+                        <div class="tags">
+                            <span class="tag">Sliding Window</span>
+                            <span class="tag">HashMap</span>
+                        </div>
+                        <button class="solve-btn" onclick="window.open('https://leetcode.com/problems/minimum-window-substring/', '_blank')">Solve</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

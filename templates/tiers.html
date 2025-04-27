@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlacePrep</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">PlacePrep</div>
+        <ul>
+          <li><a href="#" class="active">Companies</a></li>
+          <li><a href="#">Practice</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Prepare for Your Dream Company</h1>
+      <p class="subtitle">
+        Comprehensive interview preparation guides for top tech companies
+      </p>
+
+      <!-- Tier 1 Companies -->
+      <section class="tier-section">
+        <div class="tier-header">
+          <h2>Tier 1 Companies</h2>
+          <p class="tier-description">
+            Top-tier technology companies known for their exceptional
+            compensation packages, innovative work culture, and highly
+            competitive interview processes. These companies typically offer
+            base salaries ranging from $150,000 to $200,000+ for software
+            engineers, along with substantial stock options and bonuses.
+          </p>
+        </div>
+        <div class="companies-grid">
+          <div
+            class="company-card microsoft"
+            onclick="window.location.href='{{ url_for('microsoft') }}'"
+          >
+            <img
+              src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png"
+              alt="Microsoft Logo"
+              class="company-logo"
+            />
+            <h2>Microsoft</h2>
+            <h3>Interview Questions</h3>
+            <ul>
+              <li>Interview Process at Microsoft</li>
+              <li>Tips for interviewing at Microsoft</li>
+              <li>100+ Interview Questions Asked</li>
+            </ul>
+            <button class="view-guide-btn">View Full Guide</button>
+          </div>
+
+          <div class="company-card google"
+           class="company-card microsoft"
+          onclick="window.location.href='{{ url_for('google') }}'"
+          
+          >
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+              alt="Google Logo"
+              class="company-logo"
+            />
+            <h2>Google</h2>
+            <h3>Interview Questions</h3>
+            <ul>
+              <li>Interview Process at Google</li>
+              <li>Tips for interviewing at Google</li>
+              <li>70+ Interview Questions Asked</li>
+            </ul>
+            <button class="view-guide-btn">View Full Guide</button>
+          </div>
+
+          <div class="company-card amazon" 
+          class="company-card amazon"
+          onclick="window.location.href='{{ url_for('amazon') }}'">
+           
+            <img
+              src="https://pngimg.com/uploads/amazon/amazon_PNG21.png"
+              alt="Amazon Logo"
+              class="company-logo"
+            />
+            <h2>Amazon</h2>
+            <h3>Interview Questions</h3>
+            <ul>
+              <li>Interview Process at Amazon</li>
+              <li>Tips for interviewing at Amazon</li>
+              <li>100+ Interview Questions Asked</li>
+            </ul>
+            <button class="view-guide-btn">View Full Guide</button>
+          </div>
+          <div class="company-card apple"
+          class="company-card apple"
+          onclick="window.location.href='{{ url_for('apple') }}'">>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple Logo"
+              class="company-logo"
+            />
+            <h2>Apple</h2>
+            <h3>Interview Questions</h3>
+            <ul>
+              <li>Interview Process at Apple</li>
+              <li>Tips for interviewing at Apple</li>
+              <li>80+ Interview Questions Asked</li>
+            </ul>
+            <button class="view-guide-btn">View Full Guide</button>
+          </div>
+
+          <div class="company-card meta"
+         class="company-card meta"
+          onclick="window.location.href='{{ url_for('meta') }}'">
+            <img
+              src="https://logos-world.net/wp-content/uploads/2021/11/Meta-Emblem.png"
+              class="company-logo"
+            />
+            <h2>Meta</h2>
+            <h3>Interview Questions</h3>
+            <ul>
+              <li>Interview Process at Meta</li>
+              <li>Tips for interviewing at Meta</li>
+              <li>90+ Interview Questions Asked</li>
+            </ul>
+            <button class="view-guide-btn">View Full Guide</button>
+          </div>
+
+          <div class="company-card netflix"
+          class="company-card netflix"
+          onclick="window.location.href='{{ url_for('netflix') }}'">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/020/335/987/non_2x/netflix-logo-netflix-icon-free-free-vector.jpg"
+              alt="Netflix Logo"
+              class="company-logo"
+            />
+            <h2>Netflix</h2>
+            <h3>Interview Questions</h3>
+            <ul>
+              <li>Interview Process at Netflix</li>
+              <li>Tips for interviewing at Netflix</li>
+              <li>75+ Interview Questions Asked</li>
+            </ul>
+            <button class="view-guide-btn">View Full Guide</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tier 2 Companies -->
+      <section class="tier-section">
+        <div class="tier-header">
+          <h2>Tier 2 Companies</h2>
+          <p class="tier-description">
+            Well-established technology companies and unicorn startups offering
+            competitive compensation and excellent growth opportunities. These
+            companies typically offer base salaries ranging from $100,000 to
+            $150,000 for software engineers, with good benefits and work-life
+            balance.
+          </p>
+        </div>
+        <div class="companies-grid">
+            <!-- Existing Companies -->
+            <div class="company-card uber"
+            class="company-card uber"
+            onclick="window.location.href='{{ url_for('uber') }}'">
+                <img src="https://e7.pngegg.com/pngimages/631/1023/png-clipart-logo-brand-product-design-font-uber-logo-text-logo.png" alt="Uber Logo" class="company-logo">
+                <h2>Uber</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Uber</li>
+                    <li>Tips for interviewing at Uber</li>
+                    <li>60+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        
+            <div class="company-card adobe"
+            class="company-card adobe"
+            onclick="window.location.href='{{ url_for('adobe') }}'">
+                <img src="https://i.pinimg.com/736x/56/3a/a2/563aa2189ef92dc242a7db5b91078804.jpg" alt="Adobe Logo" class="company-logo">
+                <h2>Adobe</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Adobe</li>
+                    <li>Tips for interviewing at Adobe</li>
+                    <li>50+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        
+            <div class="company-card salesforce"
+            class="company-card salesforce"
+            onclick="window.location.href='{{ url_for('salesforce') }}'">
+                <img src="https://seeklogo.com/images/S/salesforce-logo-273F95FE60-seeklogo.com.png" alt="Salesforce Logo" class="company-logo">
+                <h2>Salesforce</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Salesforce</li>
+                    <li>Tips for interviewing at Salesforce</li>
+                    <li>55+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        
+            <!-- New Companies -->
+            <div class="company-card spotify"
+            class="company-card spotify"
+            onclick="window.location.href='{{ url_for('spotify') }}'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo" class="company-logo">
+                <h2>Spotify</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Spotify</li>
+                    <li>Tips for interviewing at Spotify</li>
+                    <li>45+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        
+            <div class="company-card airbnb"
+            class="company-card airbnb"
+            onclick="window.location.href='{{ url_for('airbnb') }}'">
+                <img src="https://companieslogo.com/img/orig/ABNB-4aaade0f.png?t=1633511992" alt="Airbnb Logo" class="company-logo">
+                <h2>Airbnb</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Airbnb</li>
+                    <li>Tips for interviewing at Airbnb</li>
+                    <li>50+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        
+            <div class="company-card x"
+            class="company-card x"
+            onclick="window.location.href='{{ url_for('x') }}'">
+                <img src="https://images.freeimages.com/image/large-previews/f35/x-twitter-logo-on-black-circle-5694247.png?fmt=webp&h=350 alt="X Logo" class="company-logo">
+                <h2>X</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at X</li>
+                    <li>Tips for interviewing at X</li>
+                    <li>40+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        </div>
+      </section>
+
+      <!-- Tier 3 Companies -->
+      <section class="tier-section">
+        <div class="tier-header">
+            <h2>Tier 3 Companies</h2>
+            <p class="tier-description">
+                Growing technology companies and promising startups offering good
+                learning opportunities and work experience. These companies
+                typically offer base salaries ranging from $70,000 to $100,000 for
+                software engineers, with potential for rapid growth and skill
+                development.
+            </p>
+        </div>
+        <div class="companies-grid">
+            <!-- Existing Companies -->
+            <div class="company-card mindtree"
+            class="company-card mindtree"
+            onclick="window.location.href='{{ url_for('mindtree') }}'">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoZkDhSSxrECFVVaVz6AEZOAf7Pfar8MoPkg&s"
+                    alt="Mindtree Logo"
+                    class="company-logo"
+                />
+                <h2>Mindtree</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Mindtree</li>
+                    <li>Tips for interviewing at Mindtree</li>
+                    <li>40+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+    
+            <div class="company-card infosys"
+            class="company-card infosys"
+            onclick="window.location.href='{{ url_for('infosys') }}'">
+                <img
+                    src="https://i.pinimg.com/736x/89/0c/25/890c250fe129488a586b1a99e8b68107.jpg"
+                    alt="Infosys Logo"
+                    class="company-logo"
+                />
+                <h2>Infosys</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Infosys</li>
+                    <li>Tips for interviewing at Infosys</li>
+                    <li>45+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+    
+            <div class="company-card wipro"
+            class="company-card wipro"
+            onclick="window.location.href='{{ url_for('wipro') }}'">
+                <img
+                    src="https://www.wipro.com/content/dam/nexus/en/brand/images/secondary-logo-400x276.png"
+                    alt="Wipro Logo"
+                    class="company-logo"
+                />
+                <h2>Wipro</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Wipro</li>
+                    <li>Tips for interviewing at Wipro</li>
+                    <li>35+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+    
+            <!-- New Companies -->
+            <div class="company-card tcs"
+            class="company-card tcs"
+            onclick="window.location.href='{{ url_for('tcs') }}'">
+                <img
+                    src="https://images.ctfassets.net/7xz1x21beds9/4cTq1jt8uh8jnBgvWbpKOV/663b48744791bd4e5ca178ae503d4916/Tata_Consultancy_Services_Logo.svg.png?w=1029&h=1029&q=90&fm=png"
+                    alt="TCS Logo"
+                    class="company-logo"
+                />
+                <h2>TCS</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at TCS</li>
+                    <li>Tips for interviewing at TCS</li>
+                    <li>50+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+    
+            <div class="company-card cognizant"
+            class="company-card cognizant"
+            onclick="window.location.href='{{ url_for('cognizant') }}'">
+                <img
+                    src="https://logos-world.net/wp-content/uploads/2023/03/Cognizant-Logo-2018.png"
+                    alt="Cognizant Logo"
+                    class="company-logo"
+                />
+                <h2>Cognizant</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Cognizant</li>
+                    <li>Tips for interviewing at Cognizant</li>
+                    <li>40+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+    
+            <div class="company-card capgemini"
+            class="company-card capgemini"
+            onclick="window.location.href='{{ url_for('capgemini') }}'">
+                <img
+                    src="https://1000logos.net/wp-content/uploads/2021/08/Capgemini-Logo.png
+                    "
+                    alt="Capgemini Logo"
+                    class="company-logo"
+                />
+                <h2>Capgemini</h2>
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>Interview Process at Capgemini</li>
+                    <li>Tips for interviewing at Capgemini</li>
+                    <li>30+ Interview Questions Asked</li>
+                </ul>
+                <button class="view-guide-btn">View Full Guide</button>
+            </div>
+        </div>
+    </section>
+    </main>
+
+  </body>
+</html>
